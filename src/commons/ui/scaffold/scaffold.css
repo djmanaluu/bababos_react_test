@@ -1,0 +1,12 @@
+#Scaffold {
+    position: relative;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+#ScaffoldBody {
+    flex-grow: 100;
+    position: relative;
+    box-sizing: border-box;
+}

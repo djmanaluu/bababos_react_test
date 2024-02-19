@@ -1,0 +1,88 @@
+#ProfileScreenContainer {
+    max-height: calc(var(--fullscreen-height) - 76px);
+    display: flex;
+    column-gap: 32px;
+    padding: 32px;
+    box-sizing: border-box;
+}
+
+#ProfileScreenContainer > * {
+    flex: 1;
+    height: inherit;
+}
+
+#ProfileStoreSection {
+    display: flex;
+    flex-direction: column;
+}
+
+#ProfileStoreSection #CompanyName {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+#ProfileStoreSection #Address,
+#ProfileStoreSection #Phone,
+#ProfileStoreSection #Email {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+#ProfileStoreSection button {
+    margin-top: 32px;
+}
+
+#ProfileTransactionSection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    overflow: scroll;
+}
+
+.TransactionCellWidget {
+    height: 80px;
+    display: flex;
+    column-gap: 16px;
+    color: var(--dark-grey);
+}
+
+.TransactionCellWidget > img {
+    height: inherit;
+    aspect-ratio: 1;
+}
+
+.TransactionCellWidget > :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.TransactionCellWidget p {
+    max-lines: 1;
+    -webkit-line-clamp: 1;
+    line-clamp: 1; 
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.TransactionCellWidget .Title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.TransactionCellWidget .Quantity {
+    font-size: 12px;
+}
+
+.TransactionCellWidget .Price {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--purple);
+}
+
+.TransactionCellWidget .BuyerInfo {
+    font-size: 12px;
+    font-weight: bold;
+}

@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  /* Colors */
+  --medium-grey: #999999;
+  --purple: #6B79F6;
+  --light-purple: #e9e9ff;
+  --dark-grey: #3E3E3E;
+  --light-grey: #E3E3E3;
+
+  /* Sized */
+  --fullscreen-height: calc(var(--vh, 1vh) * 100)
+}

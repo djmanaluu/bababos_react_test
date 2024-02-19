@@ -1,0 +1,8 @@
+.FormButton {
+    padding: 8px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: none;
+    box-sizing: border-box;
+    background-color: var(--purple);
+}

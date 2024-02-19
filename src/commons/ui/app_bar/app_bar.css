@@ -1,0 +1,33 @@
+#AppBarContainer {
+    display: flex;
+    background-color: var(--purple);
+    padding: 24px 32px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+    font-size: 14px;
+    color: white;
+    height: 76px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+}
+
+#AppBarContainer > a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#AppBarContainer .Selected {
+    font-weight: bold;
+}
+
+#AppBarContainer .Selected > img {
+    height: 2px;
+    object-fit: cover;
+}
